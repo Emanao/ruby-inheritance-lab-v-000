@@ -10,7 +10,6 @@ class Teacher < User
     @@KNOWLEDGE
   end
   def add_student(student)
-    binding.pry
     self.students = student
   end
   def teach
