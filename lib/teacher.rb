@@ -11,7 +11,7 @@ class Teacher < User
   end
   def add_student(student)
     binding.pry
-    self.students<<student
+    self.students = student
   end
   def teach
     self.knowledge.sample
