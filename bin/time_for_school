@@ -26,6 +26,11 @@ jim.last_name="Carter"
 #avi.add_student(jim)
 
 #jim.learn(some_knowledge)
-avi.students.each do |student|
-  puts "#{student.first_name} #{student.last_name} just learned this important knowledge: '#{student.knowledge.join(" and ")}' from Avi"
+# avi.students.each do |student|
+#   puts "#{student.first_name} #{student.last_name} just learned this important knowledge: '#{student.knowledge.join(" and ")}' from Avi"
+# end
+Teacher.all.each do |teacher|
+  if (teacher == avi)
+    puts "#{teacher.students.first_name} #{teacher.students.last_name} just learned this important knowledge: '#{teacher.students.knowledge.join(" and ")}' from Avi"
+  end
 end
