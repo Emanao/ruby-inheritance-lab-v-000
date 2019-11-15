@@ -6,7 +6,7 @@ class Student < User
     save
   end
   def learn (knowledge)
-    self.knowledge=knowledge
+    self.knowledge<<knowledge
   end
   def save
     @@all<<self
