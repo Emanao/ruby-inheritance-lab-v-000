@@ -34,6 +34,7 @@ jim.last_name="Carter"
 # end
 
 Teacher.all.each do |teacher|
+  binding.pry
   if (teacher == avi)
     puts "#{teacher.students.first_name} #{teacher.students.last_name} just learned this important knowledge: '#{teacher.students.knowledge.join(" and ")}' from Avi"
   end
