@@ -14,14 +14,14 @@ steve.first_name="Steve"
 steve.last_name="Jobs"
 avi.add_student(steve)
 2.times {steve.learn(avi.teach)}
-binding.pry
+#binding.pry
 
 alan = Student.new
 alan.first_name="Alan"
 alan.last_name="Kay"
 avi.add_student(alan)
 2.times{alan.learn(avi.teach)}
-binding.pry
+#binding.pry
 
 jim = User.new
 jim.first_name="Jim"
